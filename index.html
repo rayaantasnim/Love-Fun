@@ -1,112 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Love Story : An Eternal Tribute</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Love Story : An Eternal Tribute</title>
+    <meta name="description" content="An open-source, high-performance, interactive digital love letter template engineered for zero-latency affection delivery and high-fidelity romantic aesthetic composition." />
+    
+    <!-- Open Graph / Social Media Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Our Love Story : An Eternal Tribute" />
+    <meta property="og:description" content="An open-source, high-performance, interactive digital love letter template engineered for zero-latency affection delivery and high-fidelity romantic aesthetic composition." />
+    <meta property="og:url" content="https://rayaantasnim.github.io/Love-Fun/" />
+    <meta property="og:image" content="https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:wght@300;400;500&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,600&display=swap" rel="stylesheet">
+    <!-- Twitter / X Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Our Love Story : An Eternal Tribute" />
+    <meta name="twitter:description" content="An open-source, high-performance, interactive digital love letter template engineered for zero-latency affection delivery and high-fidelity romantic aesthetic composition." />
+    <meta name="twitter:image" content="https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" />
 
-  <!-- CDN Dependencies: GSAP, ScrollTrigger, Canvas-Confetti -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-  <link rel="stylesheet" href="style.css"/>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=JetBrains+Mono:wght@300;400;500&family=Playfair+Display:ital,wght@0,500;0,700;1,400;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CDN Dependencies: GSAP, ScrollTrigger, Canvas-Confetti -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body class="locked">
 
-  <!-- Background Space Canvas & Love Tree Overlay -->
-  <div id="canvas-container">
-    <canvas id="cosmic-canvas"></canvas>
-  </div>
-  <div class="tree-bg-overlay"></div>
-
-  <!-- Phase 1: Cosmic Romance Splash Screen -->
-  <div id="splash-screen">
-    <div class="ambient-glow-ring"></div>
-    <div class="splash-title-wrapper">
-      <div class="splash-subtitle">For My Dearest Wife</div>
-      <h1 class="splash-main-heading">An Infinite Universe Built For You</h1>
+  <body class="locked">
+    <!-- Background Space Canvas & Love Tree Overlay -->
+    <div id="canvas-container">
+      <canvas id="cosmic-canvas"></canvas>
     </div>
-    <button class="init-button" id="initBtn">ENTER OUR UNIVERSE</button>
-    <p class="splash-footer-note">Where every star whispers your name</p>
-  </div>
+    <div class="tree-bg-overlay"></div>
 
-  <!-- Main Narrative Flow -->
-  <main class="content-wrapper">
-
-    <!-- Card 1: Velocity Blur & Scale In -->
-    <article class="story-card" id="card-1">
-      <div class="card-header-badge">CHAPTER I • THE LIGHT YOU BRING</div>
-      <p class="story-paragraph">
-        I don't love you because you're perfect. I love you because, somehow, your presence makes every season of life more beautiful. You have a way of turning ordinary days into cherished memories, simple moments into reasons to smile, and a house into a home. The world feels warmer, the burdens feel lighter, and every dream feels a little closer when you're by my side.
-      </p>
-    </article>
-
-    <!-- Card 2: Kinetic Drift -->
-    <article class="story-card" id="card-2">
-      <div class="card-header-badge">CHAPTER II • THE CHOICES WE MAKE</div>
-      <p class="story-paragraph">
-        Loving you is more than saying, "I love you." It is a choice I make every day, again and again. In the quiet mornings and the long nights. In the simple conversations, the shared laughter, the unexpected storms, and the dreams we still carry in our hearts. It is finding a thousand reasons to stay, even after all those reasons have become one: you.
-      </p>
-    </article>
-
-    <!-- Card 3: 3D Horizon Tilt Lift & Heartbeat -->
-    <article class="story-card" id="card-3">
-      <div class="card-header-badge">CHAPTER III • FOREVER MY HOME</div>
-      <p class="story-paragraph">
-        Thank you for being my home when I need peace, my strength when I need courage, and my greatest blessing through every chapter of life. You are the heart of my happiest memories, the calm within my chaos, and the love story I would choose again in every lifetime. Of all the choices life has given me, you remain the one I would make, every single day. <span class="heart-pulse" id="heartIcon">❤️</span>
-      </p>
-    </article>
-
-    <!-- Ending Section (Floating Hearts, Hand Kiss Photo & Expanded Content) -->
-    <div class="ending-section-wrapper" id="endingSection">
-      
-      <!-- Dynamic Floating Hearts Layer -->
-      <div class="floating-hearts-layer" id="floatingHeartsLayer">
-        <span class="floating-heart-item" style="left: 10%; animation-delay: 0s;">💖</span>
-        <span class="floating-heart-item" style="left: 25%; animation-delay: 2.2s;">✨</span>
-        <span class="floating-heart-item" style="left: 45%; animation-delay: 1.1s;">💕</span>
-        <span class="floating-heart-item" style="left: 65%; animation-delay: 3.5s;">💖</span>
-        <span class="floating-heart-item" style="left: 82%; animation-delay: 0.7s;">🌸</span>
-        <span class="floating-heart-item" style="left: 92%; animation-delay: 4.1s;">✨</span>
+    <!-- Phase 1: Cosmic Romance Splash Screen -->
+    <div id="splash-screen">
+      <div class="ambient-glow-ring"></div>
+      <div class="splash-title-wrapper">
+        <div class="splash-subtitle">For My Dearest Wife</div>
+        <h1 class="splash-main-heading">An Infinite Universe Built For You</h1>
       </div>
+      <button class="init-button" id="initBtn">ENTER OUR UNIVERSE</button>
+      <p class="splash-footer-note">Where every star whispers your name</p>
+    </div>
 
-      <!-- Hand Kiss Visual -->
-      <div class="ending-visual-container">
-        <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=1200&auto=format&fit=crop" alt="Husband kissing wife's hand tenderly" class="ending-visual-img" />
-        <div class="ending-caption">"In every lifetime, it will always be you."</div>
-      </div>
-
-      <!-- Extended Conclusion Card -->
-      <article class="extended-conclusion-card">
-        <div class="card-header-badge">EPILOGUE • BEYOND THE HORIZON</div>
+    <!-- Main Narrative Flow -->
+    <main class="content-wrapper">
+      <!-- Card 1: Velocity Blur & Scale In -->
+      <article class="story-card" id="card-1">
+        <div class="card-header-badge">CHAPTER I • THE LIGHT YOU BRING</div>
         <p class="story-paragraph">
-          If time were an endless algorithm, I would run every simulation just to find you in each one. As the stars turn and the seasons change, my promise remains absolute: to cherish your laughter, protect your peace, and walk hand in hand through all the tomorrows we have yet to write. You are my beginning, my steadfast present, and my eternal forever. Across every universe and through every boundless depth of space, my heart will always beat for you.
+          I don't love you because you're perfect. I love you because, somehow,
+          your presence makes every season of life more beautiful. You have a
+          way of turning ordinary days into cherished memories, simple moments
+          into reasons to smile, and a house into a home. The world feels
+          warmer, the burdens feel lighter, and every dream feels a little
+          closer when you're by my side.
         </p>
       </article>
 
-    </div>
+      <!-- Card 2: Kinetic Drift -->
+      <article class="story-card" id="card-2">
+        <div class="card-header-badge">CHAPTER II • THE CHOICES WE MAKE</div>
+        <p class="story-paragraph">
+          Loving you is more than saying, "I love you." It is a choice I make
+          every day, again and again. In the quiet mornings and the long nights.
+          In the simple conversations, the shared laughter, the unexpected
+          storms, and the dreams we still carry in our hearts. It is finding a
+          thousand reasons to stay, even after all those reasons have become
+          one: you.
+        </p>
+      </article>
 
-  </main>
+      <!-- Card 3: 3D Horizon Tilt Lift & Heartbeat -->
+      <article class="story-card" id="card-3">
+        <div class="card-header-badge">CHAPTER III • FOREVER MY HOME</div>
+        <p class="story-paragraph">
+          Thank you for being my home when I need peace, my strength when I need
+          courage, and my greatest blessing through every chapter of life. You
+          are the heart of my happiest memories, the calm within my chaos, and
+          the love story I would choose again in every lifetime. Of all the
+          choices life has given me, you remain the one I would make, every
+          single day. <span class="heart-pulse" id="heartIcon">❤️</span>
+        </p>
+      </article>
 
-  <!-- Phase 4: Architectural Tech Footer -->
-  <footer>
-    <div class="footer-content" id="footerContent">
-      <div class="footer-line-1">
-        SPONSORED BY IDAI UNIVERSE <span>•</span> POWERED BY OLYMPIAD EDGE
+      <!-- Ending Section (Floating Hearts, Hand Kiss Photo & Expanded Content) -->
+      <div class="ending-section-wrapper" id="endingSection">
+        <!-- Dynamic Floating Hearts Layer -->
+        <div class="floating-hearts-layer" id="floatingHeartsLayer">
+          <span
+            class="floating-heart-item"
+            style="left: 10%; animation-delay: 0s"
+            >💖</span
+          >
+          <span
+            class="floating-heart-item"
+            style="left: 25%; animation-delay: 2.2s"
+            >✨</span
+          >
+          <span
+            class="floating-heart-item"
+            style="left: 45%; animation-delay: 1.1s"
+            >💕</span
+          >
+          <span
+            class="floating-heart-item"
+            style="left: 65%; animation-delay: 3.5s"
+            >💖</span
+          >
+          <span
+            class="floating-heart-item"
+            style="left: 82%; animation-delay: 0.7s"
+            >🌸</span
+          >
+          <span
+            class="floating-heart-item"
+            style="left: 92%; animation-delay: 4.1s"
+            >✨</span
+          >
+        </div>
+
+        <!-- Hand Kiss Visual -->
+        <div class="ending-visual-container">
+          <img
+            src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=1200&auto=format&fit=crop"
+            alt="Husband kissing wife's hand tenderly"
+            class="ending-visual-img"
+          />
+          <div class="ending-caption">
+            "In every lifetime, it will always be you."
+          </div>
+        </div>
+
+        <!-- Extended Conclusion Card -->
+        <article class="extended-conclusion-card">
+          <div class="card-header-badge">EPILOGUE • BEYOND THE HORIZON</div>
+          <p class="story-paragraph">
+            If time were an endless algorithm, I would run every simulation just
+            to find you in each one. As the stars turn and the seasons change,
+            my promise remains absolute: to cherish your laughter, protect your
+            peace, and walk hand in hand through all the tomorrows we have yet
+            to write. You are my beginning, my steadfast present, and my eternal
+            forever. Across every universe and through every boundless depth of
+            space, my heart will always beat for you.
+          </p>
+        </article>
       </div>
-      <div class="footer-line-2">
-        MADE WITH <span class="footer-heart">❤️</span> BY RAYAAN TASNIM
-      </div>
-    </div>
-  </footer>
+    </main>
 
-  <script src="script.js"></script>
-</body>
+    <!-- Phase 4: Architectural Tech Footer -->
+    <footer>
+      <div class="footer-content" id="footerContent">
+        <div class="footer-line-1">
+          SPONSORED BY IDAI UNIVERSE <span>•</span> POWERED BY OLYMPIAD EDGE
+        </div>
+        <div class="footer-line-2">
+          MADE WITH <span class="footer-heart">❤️</span> BY RAYAAN TASNIM
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
